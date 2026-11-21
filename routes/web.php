@@ -10,5 +10,7 @@ Route::prefix('{current_team}')
     ->group(function () {
         Route::view('dashboard', 'dashboard')->name('dashboard');
     });
+    
+Route::view('/adit', 'AditView');
 
 require __DIR__.'/settings.php';
